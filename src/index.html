@@ -1,0 +1,62 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    canvas {
+      display: inline-block
+    }
+
+    main {
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+
+    #info-container {
+      display: inline-grid;
+      background-color: rgb(220, 220, 220);
+      grid-template-columns: 80px 16px 30px;
+      grid-template-rows: repeat(4, 30px) 60px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding: 16px;
+      font-family: sans-serif;
+      font-size: 25px;
+      font-weight: 500;
+      row-gap: 25px;
+    }
+
+    button {
+      grid-column: 1 / 4;
+      font-size: 25px;
+    }
+
+    @media (orientation: portrait) {
+      body {
+        flex-direction: column;
+      }
+
+      #info-container {
+        grid-template-columns: repeat(2, 90px 24px 80px) 140px;
+        grid-template-rows: 40px;
+      }
+
+      button {
+        grid-column: 7/8;
+        grid-row: 1/3;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <script type="module" src="./index.js"></script>
+</body>
+
+</html>
