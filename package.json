@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "xox game with simple ai",
   "author": "Cevher <cevherkarakoc@live.com>",
+  "browserslist": "> 0.2%",
   "scripts": {
     "start": "parcel serve ./src/index.html",
-    "build": "parcel build ./src/index.html --dist-dir ./docs",
+    "build": "parcel build ./src/index.html --no-scope-hoist --dist-dir ./docs",
     "test": "mocha --require @babel/register --recursive"
   },
   "dependencies": {
