@@ -7,16 +7,17 @@
   "scripts": {
     "start": "parcel serve ./src/index.html",
     "build": "parcel build ./src/index.html --no-scope-hoist --dist-dir ./docs",
-    "test": "mocha --require @babel/register --recursive"
+    "test": "mocha --recursive"
   },
   "dependencies": {
     "p5": "^1.3.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.13.15",
-    "@babel/register": "^7.13.14",
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/register": "^7.15.3",
     "chai": "^4.3.4",
     "mocha": "^8.3.2",
-    "parcel": "next"
+    "parcel": "^2.0.0"
   }
 }
